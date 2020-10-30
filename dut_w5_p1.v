@@ -236,8 +236,8 @@ fnd_dec u1_fnd_dec( .o_seg ( seg_right ),
 wire   [41:0] i_six_digit_seg;
 
 assign        i_six_digit_seg = { {4{7'b0000000}}, seg_left, seg_right};
-//assign        six_digit_seg = { {4{7'b1110111}}, seg_left, seg_right};    //Q1
-//assign        six_digit_seg = { seg_left, seg_right, seg_left, seg_right, seg_left, seg_right};    //Q2
+//assign        i_six_digit_seg = { {4{7'b1110111}}, seg_left, seg_right};                             //Q1
+//assign        i_six_digit_seg = { seg_left, seg_right, seg_left, seg_right, seg_left, seg_right};    //Q2
 
 led_disp      u_led_disp(
                     .o_seg             ( o_seg           ),
